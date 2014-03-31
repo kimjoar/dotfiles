@@ -9,14 +9,16 @@ brew cask install google-chrome
 brew cask install dropbox
 brew cask install onepassword
 
-chsh -s /bin/zsh
-
 Clone dotfiles
 git clone https://github.com/kjbekkelund/dotfiles.git
+
+npm install --global pure-prompt
 
 ln -s ~/dev/dotfiles/.zshrc ~/.zshrc
 ln -s ~/dev/dotfiles/.zsh.d ~/.zsh.d
 ln -s ~/dev/dotfiles/.gitconfig ~/.gitconfig
+
+chsh -s /bin/zsh
 
 Open Font Book, drag in Dropbox/Fonts
 
