@@ -8,6 +8,9 @@ Install Homebrew cask
 brew cask install google-chrome
 brew cask install dropbox
 brew cask install onepassword
+brew cask install adobe-creative-cloud
+brew cask install vlc
+brew cask install caffeine
 
 Clone dotfiles
 git clone https://github.com/kjbekkelund/dotfiles.git
