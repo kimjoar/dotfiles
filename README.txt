@@ -5,12 +5,7 @@ brew install macvim git zsh node wget
 brew linkapps
 
 Install Homebrew cask
-brew cask install google-chrome
-brew cask install dropbox
-brew cask install onepassword
-brew cask install adobe-creative-cloud
-brew cask install vlc
-brew cask install caffeine
+brew cask install google-chrome dropbox onepassword adobe-creative-cloud vlc caffeine
 
 Clone dotfiles
 git clone https://github.com/kjbekkelund/dotfiles.git
@@ -31,4 +26,3 @@ Terminal -> Preferences
 -> Font: Source Code Pro, 16px
 
 Run: ~/dev/dotfiles/.osx
-
