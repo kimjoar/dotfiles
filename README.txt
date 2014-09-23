@@ -4,7 +4,7 @@ Install Homebrew: http://brew.sh
 brew install macvim git zsh node wget
 brew linkapps
 
-Install Homebrew cask
+Install Homebrew cask: brew install caskroom/cask/brew-cask
 brew cask install google-chrome dropbox onepassword adobe-creative-cloud vlc caffeine
 
 Clone dotfiles
