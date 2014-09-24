@@ -18,7 +18,7 @@ ln -s ~/dev/dotfiles/.gitconfig ~/.gitconfig
 
 chsh -s /bin/zsh
 
-Open Font Book, drag in Dropbox/Fonts
+Install vim plugins: https://github.com/kjbekkelund/vim
 
 Terminal -> Preferences
 -> Antialias text
