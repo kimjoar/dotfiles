@@ -22,6 +22,10 @@ defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryCli
 # Disable “natural” (Lion-style) scrolling
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 
+# Disable the all too sensitive backswipe
+defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
+defaults write com.google.Chrome.canary AppleEnableSwipeNavigateWithScrolls -bool false
+
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
 
@@ -53,7 +57,7 @@ defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
 
 # Restart automatically if the computer freezes
-systemsetup -setrestartfreeze on
+sudo systemsetup -setrestartfreeze on
 
 # Disable smart quotes as they’re annoying when typing code
 defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
@@ -65,7 +69,7 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 sudo tmutil disablelocal
 
 # Set the timezone; see `systemsetup -listtimezones` for other values
-systemsetup -settimezone "Europe/Oslo" > /dev/null
+sudo systemsetup -settimezone "Europe/Oslo" > /dev/null
 
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
@@ -201,8 +205,8 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 defaults write com.apple.terminal StringEncodings -array 4
 
 # Use Pro theme by default
-defaults write com.apple.terminal "Default Window Settings" -string "Pro"
-defaults write com.apple.terminal "Startup Window Settings" -string "Pro"
+defaults write com.apple.terminal "Default Window Settings" -string "base16-tomorrow.dark.256"
+defaults write com.apple.terminal "Startup Window Settings" -string "base16-tomorrow.dark.256"
 
 # Show the main window when launching Activity Monitor
 defaults write com.apple.ActivityMonitor OpenMainWindow -bool true
