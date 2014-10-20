@@ -10,6 +10,7 @@
 [core]
   editor = mvim -f
   autocrlf = input
+  excludesfile = ~/.gitignore
 [alias]
   s = status -sb
   l  = log --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen%cr%Creset' -n 15

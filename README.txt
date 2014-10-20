@@ -15,6 +15,7 @@ npm install --global pure-prompt
 ln -s ~/dev/dotfiles/.zshrc ~/.zshrc
 ln -s ~/dev/dotfiles/.zsh.d ~/.zsh.d
 ln -s ~/dev/dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/dev/dotfiles/.gitignore ~/.gitignore
 
 chsh -s /bin/zsh
 
