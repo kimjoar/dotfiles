@@ -5,7 +5,7 @@ brew install macvim git zsh node wget
 brew linkapps
 
 Install Homebrew cask: brew install caskroom/cask/brew-cask
-brew cask install google-chrome dropbox onepassword adobe-creative-cloud vlc caffeine
+brew cask install google-chrome dropbox onepassword adobe-creative-cloud vlc caffeine java spotify virtualbox vagrant
 
 Clone dotfiles
 git clone https://github.com/kjbekkelund/dotfiles.git
