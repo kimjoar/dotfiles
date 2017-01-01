@@ -5,7 +5,7 @@ brew install macvim git zsh node wget
 brew linkapps
 
 Install Homebrew cask: brew install caskroom/cask/brew-cask
-brew cask install google-chrome dropbox onepassword adobe-creative-cloud vlc caffeine java spotify virtualbox vagrant
+brew cask install google-chrome dropbox onepassword vlc java spotify virtualbox vagrant keepingyouawake atom iterm2 slack
 
 Clone dotfiles
 git clone https://github.com/kjbekkelund/dotfiles.git
@@ -19,7 +19,7 @@ ln -s ~/dev/dotfiles/.gitignore ~/.gitignore
 
 chsh -s /bin/zsh
 
-Install vim plugins: https://github.com/kjbekkelund/vim
+Install vim plugins: https://github.com/kjbekkelund/vim (`:BundleInstall`)
 
 Terminal -> Preferences
 -> Antialias text
