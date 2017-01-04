@@ -16,7 +16,7 @@
   l  = log --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen%cr%Creset' -n 15
   ll = log --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen%cr%Creset'
   local = log --branches --not --remotes --simplify-by-decoration --decorate --oneline
-  last = !"git for-each-ref --sort='-authordate:iso8601' --format=' %(authordate:relative)%09%(refname:short)' refs/heads | gtac | tail"
+  last = !"git for-each-ref --sort=committerdate refs/heads/ --format='%(color:green)%(committerdate:relative)%(color:reset) %(color:yellow)%(refname:short)%(color:reset)' | tail"
   rank = shortlog -s -n --no-merges
   w = whatchanged --oneline
   fix = commit --amend -C HEAD
