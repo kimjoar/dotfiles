@@ -16,6 +16,7 @@ ln -s ~/dev/dotfiles/.zshrc ~/.zshrc
 ln -s ~/dev/dotfiles/.zsh.d ~/.zsh.d
 ln -s ~/dev/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/dev/dotfiles/.gitignore ~/.gitignore
+ln -s ~/dev/dotfiles/.hyper.js ~/.hyper.js
 
 chsh -s /bin/zsh
 
