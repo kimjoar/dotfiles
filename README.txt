@@ -7,7 +7,9 @@ brew linkapps
 Install Homebrew cask: brew install caskroom/cask/brew-cask
 brew cask install google-chrome dropbox onepassword vlc java spotify virtualbox vagrant keepingyouawake atom iterm2 slack
 
-Clone dotfiles
+Install sdkman, http://sdkman.io/
+
+Clone dotfiles:
 git clone https://github.com/kjbekkelund/dotfiles.git
 
 npm install --global pure-prompt
