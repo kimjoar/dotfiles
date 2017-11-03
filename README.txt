@@ -1,11 +1,10 @@
 Install XCode from App Store
 Install Homebrew: http://brew.sh
 
-brew install macvim git zsh node wget
-brew linkapps
+brew install macvim git zsh node wget graphviz hub tree
 
-Install Homebrew cask: brew install caskroom/cask/brew-cask
-brew cask install google-chrome dropbox onepassword vlc java spotify virtualbox vagrant keepingyouawake atom iterm2 slack
+Install Homebrew cask: brew tap caskroom/cask
+brew cask install 1password arq atom colorsnapper dropbox google-chrome hyper intellij-idea iterm2 java8 keepingyouawake keybase slack spotify steam visual-studio-code vlc zoomus
 
 Install sdkman, http://sdkman.io/
 
@@ -23,10 +22,5 @@ ln -s ~/dev/dotfiles/.hyper.js ~/.hyper.js
 chsh -s /bin/zsh
 
 Install vim plugins: https://github.com/kjbekkelund/vim (`:BundleInstall`)
-
-Terminal -> Preferences
--> Antialias text
--> Import: ~/dev/dotfiles/themes/terminal-app/base16-tomorrow.dark.256.terminal
--> Font: Source Code Pro, 16px
 
 Run: ~/dev/dotfiles/.osx
