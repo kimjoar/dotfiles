@@ -34,3 +34,5 @@
   insteadOf = git://
 [hub]
   protocol = https
+[diff]
+  colorMoved = zebra

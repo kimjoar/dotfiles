@@ -48,7 +48,11 @@ module.exports = {
       '#ffffff'
     ],
 
-    shell: '/bin/zsh'
+    shell: '/bin/zsh',
+
+    bell: false,
+
+    updateChannel: 'canary'
   },
 
   // a list of plugins to fetch and install from npm
@@ -64,5 +68,5 @@ module.exports = {
   // in development, you can create a directory under
   // `~/.hyperterm_plugins/local/` and include it here
   // to load it and avoid it being `npm install`ed
-  localPlugins: []
+  localPlugins: [],
 };
