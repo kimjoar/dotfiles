@@ -6,7 +6,7 @@ brew install --cask macvim google-chrome 1password hyper iterm2 keybase slack sp
 gh auth login
 
 Clone dotfiles:
-git clone https://github.com/kimjoar/dotfiles.git
+gh repo clone https://github.com/kimjoar/dotfiles.git
 
 npm install --global pure-prompt
 
