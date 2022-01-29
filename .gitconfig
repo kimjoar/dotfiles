@@ -30,9 +30,5 @@
   clean = expand -t2
 [credential]
   helper = osxkeychain
-[url "https://"]
-  insteadOf = git://
-[hub]
-  protocol = https
 [diff]
   colorMoved = zebra
