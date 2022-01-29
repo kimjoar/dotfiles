@@ -4,11 +4,7 @@ brew install git gh wget graphviz tree
 brew install --cask macvim google-chrome 1password hyper iterm2 keybase slack spotify steam visual-studio-code zoom
 
 gh auth login
-
-Clone dotfiles:
 gh repo clone https://github.com/kimjoar/dotfiles.git
-
-npm install --global pure-prompt
 
 ln -s ~/dev/dotfiles/.zshrc ~/.zshrc
 ln -s ~/dev/dotfiles/.zsh.d ~/.zsh.d
@@ -16,8 +12,14 @@ ln -s ~/dev/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/dev/dotfiles/.gitignore ~/.gitignore
 ln -s ~/dev/dotfiles/.hyper.js ~/.hyper.js
 
-chsh -s /bin/zsh
+npm install --global pure-prompt
 
-Install vim plugins: https://github.com/kimjoar/vim (`:BundleInstall`)
+## Themes
 
-Run: ~/dev/dotfiles/.osx
+Install Source Code Pro:
+* https://fonts.google.com/specimen/Source+Code+Pro
+
+Install Terminal theme:
+* https://github.com/arcticicestudio/nord-terminal-app
+* wget -P /tmp https://raw.githubusercontent.com/arcticicestudio/nord-terminal-app/develop/src/xml/Nord.terminal
+* Change font + font size (16px)
