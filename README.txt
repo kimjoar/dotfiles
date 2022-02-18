@@ -1,6 +1,6 @@
 Install Homebrew: http://brew.sh
 
-brew install git gh wget graphviz tree
+brew install git gh wget graphviz tree ripgrep
 brew install --cask macvim google-chrome 1password hyper iterm2 keybase slack spotify steam visual-studio-code zoom
 
 gh auth login
