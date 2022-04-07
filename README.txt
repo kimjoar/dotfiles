@@ -1,7 +1,7 @@
 Install Homebrew: http://brew.sh
 
 brew install git gh wget graphviz tree ripgrep
-brew install --cask macvim google-chrome 1password hyper iterm2 keybase slack spotify steam visual-studio-code zoom
+brew install --cask macvim google-chrome 1password hyper iterm2 pure slack spotify steam visual-studio-code zoom
 
 gh auth login
 gh repo clone https://github.com/kimjoar/dotfiles.git
@@ -12,7 +12,7 @@ ln -s ~/dev/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/dev/dotfiles/.gitignore ~/.gitignore
 ln -s ~/dev/dotfiles/.hyper.js ~/.hyper.js
 
-npm install --global pure-prompt
+Install nvm: https://github.com/nvm-sh/nvm
 
 ## Themes
 

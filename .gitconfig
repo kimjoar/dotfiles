@@ -32,3 +32,5 @@
   helper = osxkeychain
 [diff]
   colorMoved = zebra
+[http]
+  postBuffer = 157286400
