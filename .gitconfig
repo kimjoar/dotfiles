@@ -1,9 +1,9 @@
 [user]
   name = Kim Joar Bekkelund
-  email = kjbekkelund@gmail.com
-  signingkey = 3DC1701B
+  email = hei@kimjoar.net
+  signingkey = 2C2C924AA4507028
 [github]
-  user = kjbekkelund
+  user = kimjoar
 [color]
   ui = auto
 [log]
