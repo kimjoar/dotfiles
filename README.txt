@@ -1,6 +1,6 @@
 Install Homebrew: http://brew.sh
 
-brew install git gh wget graphviz tree ripgrep gnupg pinentry-mac
+brew install git gh wget graphviz tree ripgrep gnupg pinentry-mac scc
 brew install --cask macvim google-chrome 1password hyper iterm2 pure slack spotify steam visual-studio-code zoom keybase
 
 Import private key A4507028 to GPG Keychain
