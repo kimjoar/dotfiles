@@ -1,6 +1,6 @@
 Install Homebrew: http://brew.sh
 
-brew install git gh wget graphviz tree ripgrep pinentry-mac scc
+brew install git gh wget graphviz tree ripgrep pinentry-mac scc jenv java
 brew install --cask macvim google-chrome 1password hyper iterm2 pure slack spotify steam visual-studio-code zoom keybase messenger gpg-suite-no-mail
 
 Import private key A4507028 to GPG Keychain
@@ -18,6 +18,8 @@ Install nvm: https://github.com/nvm-sh/nvm
 
 Set up pinentry:
 echo "pinentry-program $(which pinentry-mac)" >> ~/.gnupg/gpg-agent.conf
+
+Java managed through jenv. If needed, `jenv` to configure version
 
 ## Themes
 
