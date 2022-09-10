@@ -45,3 +45,5 @@
   postBuffer = 157286400
 [commit]
   gpgsign = true
+[branch]
+  autosetupmerge = true
