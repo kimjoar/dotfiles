@@ -17,7 +17,7 @@
   l  = log --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen%cr%Creset' -n 15
   ll = log --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen%cr%Creset'
   local = log --branches --not --remotes --simplify-by-decoration --format='%C(yellow)%D%Creset %s %Cgreen%cr%Creset'
-  last = branch --sort=committerdate --format '%(color:green)%(committerdate:relative)%(color:reset) %(refname:short) %(color:yellow)%(upstream:short)'
+  last = branch --sort=committerdate --format '%(color:green)%(committerdate:relative)%(color:reset) %(refname:short) %(color:yellow)%(objectname:short) %(color:red)%(authorname)'
   rank = shortlog -s -n --no-merges
   w = whatchanged --oneline
   fix = commit --amend -C HEAD
