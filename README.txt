@@ -1,13 +1,13 @@
 Install Homebrew: http://brew.sh
 
-brew install git gh wget graphviz tree ripgrep pinentry-mac scc jenv java
-brew install --cask macvim google-chrome 1password hyper iterm2 pure slack spotify steam visual-studio-code zoom keybase messenger gpg-suite-no-mail
+brew bundle
 
 Import private key A4507028 to GPG Keychain
 
 gh auth login
 gh repo clone https://github.com/kimjoar/dotfiles.git
 
+ln -s ~/dev/dotfiles ~/.dotfiles
 ln -s ~/dev/dotfiles/.zshrc ~/.zshrc
 ln -s ~/dev/dotfiles/.zsh.d ~/.zsh.d
 ln -s ~/dev/dotfiles/.gitconfig ~/.gitconfig
@@ -30,3 +30,6 @@ Install Terminal theme:
 * https://github.com/arcticicestudio/nord-terminal-app
 * wget -P /tmp https://raw.githubusercontent.com/arcticicestudio/nord-terminal-app/develop/src/xml/Nord.terminal
 * Change font + font size (16px)
+
+Update brewfile:
+rm $HOMEBREW_BUNDLE_FILE && brew bundle dump
