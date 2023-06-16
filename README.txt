@@ -1,11 +1,13 @@
 Install Homebrew: http://brew.sh
 
-brew bundle
-
-Import private key A4507028 to GPG Keychain
+brew install gh
 
 gh auth login
 gh repo clone https://github.com/kimjoar/dotfiles.git
+
+brew bundle
+
+Import private key A4507028 to GPG Keychain
 
 ln -s ~/dev/dotfiles ~/.dotfiles
 ln -s ~/dev/dotfiles/.zshrc ~/.zshrc
