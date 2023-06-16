@@ -51,8 +51,6 @@ module.exports = {
     shell: '/bin/zsh',
 
     bell: false,
-
-    updateChannel: 'canary'
   },
 
   // a list of plugins to fetch and install from npm

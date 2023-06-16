@@ -9,7 +9,7 @@
 [log]
   date = relative
 [core]
-  editor = mvim -f
+  editor = code --wait
   autocrlf = input
   excludesfile = ~/.gitignore
 [alias]
@@ -17,7 +17,7 @@
   l  = log --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen%cr%Creset' -n 15
   ll = log --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen%cr%Creset'
   local = log --branches --not --remotes --simplify-by-decoration --format='%C(yellow)%D%Creset %s %Cgreen%cr%Creset'
-  last = branch --sort=committerdate --format '%(color:green)%(committerdate:relative)%(color:reset) %(refname:short) %(color:yellow)%(objectname:short) %(color:red)%(authorname)'
+  last = branch --sort=committerdate --format '%(color:green)%(committerdate:relative)%(color:reset) %(refname:short) %(color:yellow)%(objectname:short) %(color:red)%(authorname)%(color:reset) - %(subject)'
   rank = shortlog -s -n --no-merges
   w = whatchanged --oneline
   fix = commit --amend -C HEAD
@@ -27,7 +27,8 @@
   c = commit -m
   unmerged = !git branch -r --no-merged | grep -v HEAD | xargs -L1 git --no-pager log --pretty=tformat:'%Cgreen%d%Creset %Cred%h%Creset %an %Cblue%ar%Creset' -1
   rc = !"git add -A; git commit -m \"$(echo $(curl -s http://whatthecommit.com/index.txt))\""
-  commits-since-bump = rev-list main ^'HEAD^{/Bump version}' --pretty=oneline --count
+  commits-since-bump = rev-list main ^'HEAD^{/Bump version}' --oneline --first-parent --no-commit-header --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen%cr%Creset'
+  commits-since-bump-count = rev-list main ^'HEAD^{/Bump version}' --count
 [filter "tabspace"]
   clean = expand -t2
 [credential]
