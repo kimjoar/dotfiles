@@ -30,6 +30,7 @@
   merges-since-bump = rev-list main ^'HEAD^{/Bump version}' --oneline --first-parent --no-commit-header --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen%cr%Creset'
   merges-since-bump-who = shortlog main ^'HEAD^{/Bump version}' -s -n --first-parent
   commits-since-bump-count = rev-list main ^'HEAD^{/Bump version}' --count
+  reb = rebase --interactive --update-refs --autosquash
 [filter "tabspace"]
   clean = expand -t2
 [credential]
