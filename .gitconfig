@@ -27,7 +27,8 @@
   c = commit -m
   unmerged = !git branch -r --no-merged | grep -v HEAD | xargs -L1 git --no-pager log --pretty=tformat:'%Cgreen%d%Creset %Cred%h%Creset %an %Cblue%ar%Creset' -1
   rc = "-c core.editor=true rebase --continue"
-  commits-since-bump = rev-list main ^'HEAD^{/Bump version}' --oneline --first-parent --no-commit-header --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen%cr%Creset'
+  merges-since-bump = rev-list main ^'HEAD^{/Bump version}' --oneline --first-parent --no-commit-header --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen%cr%Creset'
+  merges-since-bump-who = shortlog main ^'HEAD^{/Bump version}' -s -n --first-parent
   commits-since-bump-count = rev-list main ^'HEAD^{/Bump version}' --count
 [filter "tabspace"]
   clean = expand -t2
