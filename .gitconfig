@@ -36,8 +36,11 @@
 [credential]
   helper = osxkeychain
 [diff]
-  colorMoved = zebra
+  colorMoved = plain
   tool = difftastic
+  colormovedws = allow-indentation-change
+  algorithm = histogram
+  renames = true
 [difftool]
   prompt = false
 [difftool "difftastic"]
@@ -50,7 +53,20 @@
   gpgsign = true
 [branch]
   autosetupmerge = true
+  sort = -committerdate
 [rebase]
   autosquash = true
 [init]
   defaultBranch = main
+[column]
+  ui = auto
+[tag]
+  sort = version:refname
+[push]
+  autoSetupRemote = true
+[fetch]
+  prune = true
+  pruneTags = true
+  all = true
+[pull]
+  rebase = true
