@@ -4,4 +4,3 @@ if [ -d ~/.zsh.d ]; then
   done
   unset component
 fi
-
