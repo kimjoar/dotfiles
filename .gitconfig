@@ -14,10 +14,10 @@
   excludesfile = ~/.gitignore
 [alias]
   s = status -sb
-  l  = log --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen%cr%Creset' -n 15
-  ll = log --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %Cgreen%cr%Creset'
+  l  = ll -n 15
+  ll = log --graph --pretty=format:'%Cred%h%Creset %Cgreen%ch%Creset %s %C(yellow)%D%Creset'
   local = log --branches --not --remotes --simplify-by-decoration --format='%C(yellow)%D%Creset %s %Cgreen%cr%Creset'
-  last = branch --sort=committerdate --format '%(color:green)%(committerdate:relative)%(color:reset) %(refname:short) %(color:yellow)%(objectname:short) %(color:red)%(authorname)%(color:reset) - %(subject)'
+  last = branch --sort=committerdate --format '%(color:green)%(committerdate:relative)%(color:reset) %(color:yellow)%(refname:short)%(color:reset) %(subject)'
   rank = shortlog -s -n --no-merges
   w = whatchanged --oneline
   fix = commit --amend -C HEAD
